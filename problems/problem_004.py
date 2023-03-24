@@ -11,6 +11,16 @@
 
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
+value1= 1
+value2= 3
+value3= 2
 
 def max_of_three(value1, value2, value3):
-    pass
+    if value1 >= value2 and value1 >= value3:
+        return value1
+    if value2 >= value1 and value2 >= value3:
+        return value2
+    else:
+        return value3
+
+print(max_of_three(value1, value2, value3))
