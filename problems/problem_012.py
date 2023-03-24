@@ -25,5 +25,5 @@ def fizzbuzz(number):
     else:
         return number
 
-number = 3
+number = 5
 print(fizzbuzz(number))

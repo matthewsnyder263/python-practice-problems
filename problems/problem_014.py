@@ -10,5 +10,25 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
+##FIRST TRY BUT ORDER MATTERS SO DO AGAIN
+
+#def can_make_pasta(ingredients):
+#    if ingredients == ["flour", "eggs", "oil"]:
+#        return True
+#    else:
+#        return False
+
+#ingredients = ["flour", "oil", "eggs"]
+#print (can_make_pasta(ingredients))
+
 def can_make_pasta(ingredients):
-    pass
+    if (
+        "flour" in ingredients and
+        "eggs" in ingredients and
+        "oil" in ingredients
+        ):
+        return True
+    else:
+        return False
+ingredients = "eggs","flour","oil"
+print(can_make_pasta(ingredients))
