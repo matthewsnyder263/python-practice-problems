@@ -13,7 +13,24 @@
 # problem to get a good feel for how to solve it.
 
 def is_palindrome(word):
-    if is_palindrome(word) == (reversed(word))
-    return True
-else
-return False
+    reversed_word = "".join(reversed(word))
+    if word == reversed_word:
+        return True
+    else:
+        return False
+
+word = "Mike"
+print(is_palindrome(word))
+
+
+
+
+# TRY another attempt
+# word = "ZooZ"
+# def is_palindrome(word):
+#     if word == word[::-1]:
+#         return True
+#     else:
+#         return False
+
+# print(is_palindrome(word))
