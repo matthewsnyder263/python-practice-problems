@@ -6,5 +6,17 @@
 #   * If it is not a workday, the list needs to contain
 #     "surfboard"
 
+gear = []
+
 def gear_for_day(is_workday, is_sunny):
-    pass
+    if is_workday is True:
+        gear.append("laptop")
+        if is_sunny is False:
+            gear.append("umbrella")
+    else:
+        gear.append("surfboard")
+    return gear
+
+is_workday = False
+is_sunny = False
+print(gear_for_day(is_workday, is_sunny))
