@@ -7,4 +7,12 @@
 #
 
 def calculate_sum(values):
-    pass
+    if len(values) == 0:
+        return None
+    total = 0 
+    for val in values:
+        total = total + val
+    return total
+    
+lst = [2,3,4,5]
+print (calculate_sum(lst))
