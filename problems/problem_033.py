@@ -16,4 +16,14 @@
 # problem to get a good feel for how to solve it.
 
 def sum_of_first_n_even_numbers(n):
-    pass
+        if len(n) == 0:
+            Return ("None")
+        n=n[0]
+        if n == -1:
+            Return ("None")
+        #double initial value to an even #
+        n = n * 2
+        expanding_list = list(range(n, 0, -2))
+        return sum(expanding_list)
+x = [5]
+print(sum_of_first_n_even_numbers(x))

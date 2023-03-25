@@ -16,4 +16,18 @@
 # problem to get a good feel for how to solve it.
 
 def sum_of_first_n_numbers(limit):
-    pass
+    if len(limit) == 0:
+        return None
+    limit = limit[0]
+    if limit < 0:
+        return None
+    if limit == 0:
+        return 0
+    countdown_list = list(range(limit, 0, -1))
+    sum = 0 
+    for i in countdown_list:
+        sum += i
+    return sum
+
+x = [10]
+print(sum_of_first_n_numbers(x))
