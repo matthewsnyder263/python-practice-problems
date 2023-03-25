@@ -18,9 +18,10 @@
 
 ### 01 minimum_value
 
-Add plans...
+Couldn't return either. Figure out how to return either. I only returned a string.
 
 ### 04 max_of_three
+
 
 ### 06 can_skydive
 

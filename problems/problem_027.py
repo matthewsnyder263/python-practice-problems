@@ -5,4 +5,9 @@
 #
 
 def max_in_list(values):
-    pass
+    greatest_value = max(values)
+    for i in values:
+        return greatest_value 
+
+lst = [52,32,9,28]
+print(max_in_list(lst))

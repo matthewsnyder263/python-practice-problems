@@ -8,6 +8,7 @@
 #
 # It used the built-in function reversed and the join method
 # for string objects.
+word = "mafia"
 
 def is_palindrome(word):
     reversed_list_of_letters = reversed(word)                   # solution
@@ -17,3 +18,4 @@ def is_palindrome(word):
     else:                                                       # solution
         return False                                            # solution
     # pass                                                      # problem
+print(is_palindrome(word))

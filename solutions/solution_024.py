@@ -22,3 +22,5 @@ def calculate_average(values):
     # in the list
     return sum / len(values)                            # solution
     # pass                                              # problem
+#lst = [1,2,3,4,100]
+#print (calculate_average(lst))
