@@ -22,4 +22,16 @@
 
 
 def count_letters_and_digits(s):
-    pass
+    num_digits = []
+    num_letters = []
+    for i in s:
+        if i.isdigit():
+            num_digits.append(i)
+        elif i.isalpha():
+            num_letters.append(i)
+    value1 = (len(num_letters))
+    value2 = (len(num_digits))
+    return value1, value2
+
+s = ("1111444aaa")
+print(count_letters_and_digits(s))
