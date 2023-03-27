@@ -35,3 +35,51 @@
             # return None
         # returns the sum of the scores divided by
         # the number of scores
+
+#class Student:
+#    def __init__(self, name):
+#        self.name = name
+#        self.list = []
+
+#    def add_score(self, score):
+#        self.list.append(score)
+#        total = 0
+#        for i in self.list:
+#            total += i
+
+#    def get_average(self):
+#        total = 0
+#        for i in self.list:
+#            total += i
+#        average = total / len(self.list)
+#        return average
+
+#matt = Student('Matt')
+#matt.add_score(80)
+#matt.add_score(90)
+#matt.add_score(85)
+#average_score = matt.get_average()
+#print(average_score)
+
+class Student:
+    def __init__(self, name):
+        self.name = name
+        self.scores = []
+        
+    def add_score(self, score):
+        self.scores.append(score)
+        
+    def get_average(self):
+        if len(self.scores) == 0:
+            return None
+        
+        return sum(self.scores) / len(self.scores)
+
+student = Student("Malik")
+print(student.get_average())
+student.add_score(80)
+student.add_score(76)
+student.add_score(90)
+
+print(student.get_average())
+        
