@@ -20,9 +20,14 @@
 import math
 
 # class Circle
+class Circle:
     # method initializer with radius
+    def __init__(self):
+        radius = radius(self)
         # if radius is less than 0
             # raise ValueError
+        if radius < 0:
+            raise ValueError
         # self.radius = radius
 
     # method calculate_perimeter(self)
