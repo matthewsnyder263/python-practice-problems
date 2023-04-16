@@ -35,4 +35,5 @@ def check_password(password):
         and has_digit                                                   # solution
         and has_special_char                                            # solution
     )                                                                   # solution
-    # pass                                                              # problem
+password = ("asdfaS6f")
+print(check_password(password))                                              # problem
